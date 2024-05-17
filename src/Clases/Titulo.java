@@ -1,30 +1,21 @@
 package Clases;
 
-/*Universidad del Valle de Guatemala
- * Pablo Diaz 13203
- * Adolfo Morales 13269
- * Javier Mérida 13014
- * Clase para mostrar el título del juego
- * Titulo.java
- * 18/06/2013
- */
 import java.awt.*;
 import javax.swing.*;
 import javax.swing.border.Border;
         
 
 public class Titulo extends JPanel {
-    //componentes necesarios para mostar el titulo 
+    
     private JLabel J_titulo;
     private Border B_titulo, B_outside; 
     
-    //constructor para hacer el título
     public Titulo(){
         super();
         setLayout(new GridBagLayout());
         addWidgets();
     }
-    //metodo interno para definir las propiedades del Jlabel del titulo
+   
     private void addWidgets(){
         B_titulo = BorderFactory.createRaisedBevelBorder();
         J_titulo = new JLabel("Juego de Serpientes y Escaleras");
